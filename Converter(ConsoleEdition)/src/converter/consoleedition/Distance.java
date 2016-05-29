@@ -119,7 +119,61 @@ public class Distance
   {
       double finalConversion;
       
-      finalConversion = conversionValue / //INSERT VALUE HERE;
+      finalConversion = conversionValue * 30.48;
+      
+      return finalConversion;
+  }
+  
+  public double conFromFeetToFeet()
+  {
+      double finalConversion;
+      
+      finalConversion = conversionValue * 1;
+      
+      return finalConversion;
+  }
+  
+  public double conFromFeetToInches()
+  {
+      double finalConversion;
+      
+      finalConversion = conversionValue * 30.48;
+      
+      return finalConversion;
+  }
+  
+  public double conFromInchesToMeters()
+  {
+      double finalConversion;
+      
+      finalConversion = conversionValue * 0.0254;
+      
+      return finalConversion;
+  }
+  
+  public double conFromInchesToCM()
+  {
+      double finalConversion;
+      
+      finalConversion = conversionValue * 2.54;
+      
+      return finalConversion;
+  }
+  
+  public double conFromInchesToFeet()
+  {
+      double finalConversion;
+      
+      finalConversion = conversionValue / 12;
+      
+      return finalConversion;
+  }
+  
+  public double conFromInchesToInches()
+  {
+      double finalConversion;
+      
+      finalConversion = conversionValue * 1;
       
       return finalConversion;
   }
