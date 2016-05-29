@@ -37,6 +37,12 @@ public class ConverterConsoleEdition
             
             String outputDistanceFrom;
             outputDistanceFrom = "What would you like to convert from?" + "\n\n";
+            outputDistanceFrom += "1. Meters";
+            outputDistanceFrom += "2.Centimeters";
+            outputDistanceFrom += "3. Feet";
+            outputDistanceFrom += "4. Inches";
+            
+            conDistance.setConversionValue(readInput.next);
         }
     }
     
