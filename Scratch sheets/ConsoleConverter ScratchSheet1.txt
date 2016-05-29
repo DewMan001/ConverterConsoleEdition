@@ -4,4 +4,4 @@ Distance conDistance = new Distance();
  outputDistanceFrom = "What would you like to convert from?" + "\n";
  outputDistanceFrom += "1. Meters" + "\n";
  outputDistanceFrom += "2. Centimetres" += "\n";
- outputDistanceFrom += "3. Feet" += ""
+ outputDistanceFrom += "3. Feet" += "\n"

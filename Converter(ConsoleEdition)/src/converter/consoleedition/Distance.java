@@ -28,7 +28,7 @@ public class Distance
       return convertToType;
   }
   
-  public double setConversionValue(int value)
+  public double setConversionValue(double value)
   {
       conversionValue = value;
       return conversionValue;
