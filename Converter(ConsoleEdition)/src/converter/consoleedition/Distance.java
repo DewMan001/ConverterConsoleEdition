@@ -12,8 +12,8 @@ package converter.consoleedition;
 public class Distance
 {
    public int convertFromType;
-   private int convertToType;
-   private double conversionValue;
+   public int convertToType;
+   public double conversionValue;
 
       
   public void setConvertFromType(int value)
@@ -64,7 +64,7 @@ public class Distance
       return finalConversion;
   }
   
-  public double conFeromMetersToFeet()
+  public double conFromMetersToFeet()
   {
       double finalConversion;
       
