@@ -55,7 +55,15 @@ public class ConverterConsoleEdition
             
             System.out.println(outputDistanceTo);
             
+            conDistance.setConvertToType(Integer.parseInt(readInput.next()));
             
+            if (conDistance.convertFromType == 1 && conDistance.convertToType == 1)
+            {
+                System.out.println("How many meters would you like to convert into meters?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromMetersToMeters() + " meters");
+            }
         }
     }
     
