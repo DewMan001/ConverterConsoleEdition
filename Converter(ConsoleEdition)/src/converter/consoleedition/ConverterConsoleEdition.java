@@ -64,6 +64,38 @@ public class ConverterConsoleEdition
                 
                 System.out.println(conDistance.conFromMetersToMeters() + " meters");
             }
+            
+            else if (conDistance.convertFromType == 1 && conDistance.convertToType == 2)
+            {
+                System.out.println("Hon many meters would you like to convert into centimeters?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromMetersToCM() + " centimeters");
+            }
+            
+            else if (conDistance.convertFromType == 1 && conDistance.convertToType == 3)
+            {
+                System.out.println("How many meters would you like to convert into feet?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromMetersToFeet() + " feet");
+            }
+            
+            else if (conDistance.convertFromType == 1 && conDistance.convertToType == 4)
+            {
+                System.out.println("How many meters would you like to convert into inches?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromMetersToInches() + " inches");
+            }
+            
+            else if (conDistance.convertFromType == 2 && conDistance.convertToType == 1)
+            {
+                System.out.println("How many centimeters would you like to convert into meters?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.o
+            }
         }
     }
     
