@@ -11,26 +11,38 @@ package converter.consoleedition;
  */
 public class Distance
 {
-   private int convertFromType;
+   public int convertFromType;
    private int convertToType;
    private double conversionValue;
 
       
-  public int setConvertFromType(int value)
+  public void setConvertFromType(int value)
   {
       convertFromType = value;
+  }
+  
+  public int getConvertFromType()
+  {
       return convertFromType;
   }
   
-  public int setConvertToType(int value)
+  public void setConvertToType(int value)
   {
       convertToType = value;
+  }
+  
+  public int getConvertToType()
+  {
       return convertToType;
   }
   
-  public double setConversionValue(double value)
+  public void setConversionValue(double value)
   {
       conversionValue = value;
+  }
+  
+  public double getConversionValue()
+  {
       return conversionValue;
   }
   
