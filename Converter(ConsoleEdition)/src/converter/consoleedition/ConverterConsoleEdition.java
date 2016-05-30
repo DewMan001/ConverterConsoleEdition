@@ -36,13 +36,26 @@ public class ConverterConsoleEdition
             Distance conDistance = new Distance();
             
             String outputDistanceFrom;
-            outputDistanceFrom = "What would you like to convert from?" + "\n\n";
-            outputDistanceFrom += "1. Meters";
-            outputDistanceFrom += "2.Centimeters";
-            outputDistanceFrom += "3. Feet";
-            outputDistanceFrom += "4. Inches";
+            outputDistanceFrom = "What would you like to convert from?" + "\n";
+            outputDistanceFrom += "1. Meters" + "\n";
+            outputDistanceFrom += "2.Centimeters" + "\n";
+            outputDistanceFrom += "3. Feet" + "\n";
+            outputDistanceFrom += "4. Inches" + "\n";
             
-            conDistance.setConversionValue(readInput.next);
+            System.out.println(outputDistanceFrom);
+            
+            conDistance.setConvertFromType(Integer.parseInt(readInput.next()));
+            
+            String outputDistanceTo;
+            outputDistanceTo = "What would you like to convert to?" + "\n";
+            outputDistanceTo += "1. Metres" + "\n";
+            outputDistanceTo += "2. Centimetres" + "\n";
+            outputDistanceTo += "3. Feet" + "\n";
+            outputDistanceTo += "4. Inches" + "\n";
+            
+            System.out.println(outputDistanceTo);
+            
+            
         }
     }
     
