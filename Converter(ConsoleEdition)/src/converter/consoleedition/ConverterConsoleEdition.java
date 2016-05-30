@@ -57,6 +57,7 @@ public class ConverterConsoleEdition
             
             conDistance.setConvertToType(Integer.parseInt(readInput.next()));
             
+            //the if and else-ifs for converting from meters to any other option
             if (conDistance.convertFromType == 1 && conDistance.convertToType == 1)
             {
                 System.out.println("How many meters would you like to convert into meters?");
@@ -94,7 +95,41 @@ public class ConverterConsoleEdition
                 System.out.println("How many centimeters would you like to convert into meters?");
                 conDistance.setConversionValue(Double.parseDouble(readInput.next()));
                 
-                System.o
+                System.out.println(conDistance.conFromCMToMeters() + " meters");
+            }
+            
+            //the else ifs for converting from centimeters to any other option
+            else if (conDistance.convertFromType == 2 && conDistance.convertToType == 2)
+            {
+                System.out.println("How many centimeters would you like to convert into centimeters?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromCMToCM() + " centimeters");
+            }
+            
+            else if (conDistance.convertFromType == 2 && conDistance.convertToType == 3)
+            {
+                System.out.println("How many centimeters would you like to convert into feet?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromCMToFeet() + " feet");
+            }
+            
+            else if (conDistance.convertFromType == 2 && conDistance.convertToType == 4)
+            {
+                System.out.println("How many centimeters would you like to convert into inches?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromCMToInches() + " inches");
+            }
+            
+            //and now the else ifs for feet into anything else
+            else if (conDistance.convertFromType == 3 && conDistance.convertToType == 1)
+            {
+                System.out.println("How many feet would you like to convert into meters?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromFeetToMeters());
             }
         }
     }
