@@ -129,8 +129,43 @@ public class ConverterConsoleEdition
                 System.out.println("How many feet would you like to convert into meters?");
                 conDistance.setConversionValue(Double.parseDouble(readInput.next()));
                 
-                System.out.println(conDistance.conFromFeetToMeters());
+                System.out.println(conDistance.conFromFeetToMeters() + " meters");
             }
+            
+            else if (conDistance.convertFromType == 3 && conDistance.convertToType == 2)
+            {
+                System.out.println("How many feet would you like to convert into centimeters?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromFeetToCM() + " meters");
+                
+            }
+            
+            else if (conDistance.convertFromType == 3 && conDistance.convertToType == 3)
+            {
+                System.out.println("How many feet would you like to convert into feet?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromFeetToFeet() + " meters");
+            }
+            
+            else if (conDistance.convertFromType == 3 && conDistance.convertToType == 4)
+            {
+                System.out.println("How many feet would you like convert into inches?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromFeetToInches() + " meters");
+            }
+            
+            else if (conDistance.convertFromType == 4 && conDistance.convertToType == 1)
+            {
+                System.out.println("How many inches would you like to convert into meters?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromInchesToMeters() + " meters");
+            }
+            
+            else if (conDistance.convertFromType == 4 && conDistance.convertToType == 2)
         }
     }
     
