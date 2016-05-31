@@ -22,7 +22,9 @@ public class ConverterConsoleEdition
         //setting up the intro in an output string
         String outputIntro;
 
-        outputIntro = "Hello! Welcome to the converter!" + "\n\n";
+        outputIntro = "Hello! Welcome to the converter!" + "\n";
+        outputIntro += "To make a selection, type in the number next to the item you desire." + "\n\n";
+        
         outputIntro += "What would you like to convert today?" + "\n";
         outputIntro += "1. Distance" + "\n";
         outputIntro += "2. Temperature" + "\n";
@@ -38,7 +40,7 @@ public class ConverterConsoleEdition
             String outputDistanceFrom;
             outputDistanceFrom = "What would you like to convert from?" + "\n";
             outputDistanceFrom += "1. Meters" + "\n";
-            outputDistanceFrom += "2.Centimeters" + "\n";
+            outputDistanceFrom += "2. Centimeters" + "\n";
             outputDistanceFrom += "3. Feet" + "\n";
             outputDistanceFrom += "4. Inches" + "\n";
             
@@ -166,6 +168,33 @@ public class ConverterConsoleEdition
             }
             
             else if (conDistance.convertFromType == 4 && conDistance.convertToType == 2)
+            {
+                System.out.println("How many inches would you like to convert into centimeters?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromInchesToCM() + " centimeters");
+            }
+            
+            else if (conDistance.convertFromType == 4 && conDistance.convertToType == 3)
+            {
+                System.out.println("How many inches would you like to convert into feet?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromInchesToFeet() + " feet");
+            }
+            
+            else if (conDistance.convertFromType == 4 && conDistance.convertToType == 4)
+            {
+                System.out.println("How many inches would you like to convert into inches?");
+                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                
+                System.out.println(conDistance.conFromInchesToInches() + " inches");
+            }
+        }
+        
+        else if (userInput == 2)
+        {
+            
         }
     }
     
