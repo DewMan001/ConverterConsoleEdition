@@ -194,7 +194,59 @@ public class ConverterConsoleEdition
         
         else if (userInput == 2)
         {
+            Temperature conTemperature = new Temperature();
             
+            String outputDistanceFrom;
+            
+            outputDistanceFrom = "What would you like to convert from?" + "\n";
+            outputDistanceFrom += "1. Celsius" + "\n";
+            outputDistanceFrom += "2. Farenheit" + "\n";
+            
+            System.out.println(outputDistanceFrom);
+            
+            conTemperature.setConvertFromType(Integer.parseInt(readInput.next()));
+            
+            String outputDistanceTo;
+            
+            outputDistanceTo = "What would you like to convert To?" + "\n";
+            outputDistanceFrom += "1. Celsius" + "\n";
+            outputDistanceFrom += "2. Farenheit" + "\n";
+            
+            System.out.println(outputDistanceTo);
+
+            conTemperature.setConvertToType(Integer.parseInt(readInput.next()));
+            
+              if (conTemperature.convertFromType == 1 && conTemperature.convertToType == 1)
+  {
+    System.out.println("How many degrees celsius would you like to convert into celsius?");
+    conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
+
+    System.out.println(conTemperature.conFromCelsiusToCelsius() + "°C");
+  }
+
+  else if (conTemperature.convertFromType == 1 && conTemperature.convertToType == 2)
+  {
+    System.out.println("How many degrees celsius would you like to convert into celsius?");
+    conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
+
+    System.out.println(conTemperature.conFromCelsiusToFarenheit() + "°F");
+  }
+
+  else if (conTemperature.convertFromType == 2 && conTemperature.convertToType == 1)
+  {
+    System.out.println("How many degrees farenheit would you like to convert into celsius?");
+    conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
+
+    System.out.println(conTemperature.conFromFarenheitToCelsius() + "°C");
+  }
+
+  else if (conTemperature.convertFromType == 2 && conTemperature.convertToType == 2)
+  {
+    System.out.println("How many degrees farenheit would you like to convert into celsius?");
+    conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
+
+    System.out.println(conTemperature.conFromFarenheitToFarenheit() + "°F");
+  }
         }
     }
     
