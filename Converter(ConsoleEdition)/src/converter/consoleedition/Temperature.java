@@ -11,9 +11,9 @@ package converter.consoleedition;
  */
 public class Temperature
 {
- private int convertFromType;
-   private int convertToType;
-   private double conversionValue;
+ public int convertFromType;
+   public int convertToType;
+   public double conversionValue;
 
       
   public int setConvertFromType(int value)

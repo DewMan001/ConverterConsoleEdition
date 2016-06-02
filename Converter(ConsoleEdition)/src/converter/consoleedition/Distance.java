@@ -149,7 +149,7 @@ public class Distance
   {
       double finalConversion;
       
-      finalConversion = conversionValue * 30.48;
+      finalConversion = conversionValue * 12;
       
       return finalConversion;
   }
