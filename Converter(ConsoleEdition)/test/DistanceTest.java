@@ -150,7 +150,23 @@ public class DistanceTest
     {
         Distance IToCMTest = new Distance();
         IToCMTest.conversionValue = 129;
-        Assert.assertEquals("129 inches should be 328 centimeters"));
+        Assert.assertEquals("129 inches should be 328 centimeters", 328, IToCMTest.conFromInchesToCM(), 1);
+    }
+    
+    @Test
+    public void testInchesToFeet()
+    {
+        Distance IToFTest = new Distance();
+        IToFTest.conversionValue = 328;
+        Assert.assertEquals("328 inches should be 27 feet", 27, IToFTest.conFromInchesToFeet(), 1);
+    }
+    
+    @Test
+    public void testInchesToInches()
+    {
+        Distance IToITest = new Distance();
+        IToITest.conversionValue = 38;
+        Assert.assertEquals("38 inches should be 38 inches", 38, IToITest.conFromInchesToInches(), 1);
     }
     
     @After
