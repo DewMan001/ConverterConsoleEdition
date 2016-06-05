@@ -63,7 +63,16 @@ public class ConverterConsoleEdition
             if (conDistance.convertFromType == 1 && conDistance.convertToType == 1)
             {
                 System.out.println("How many meters would you like to convert into meters?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromMetersToMeters() + " meters");
             }
@@ -71,7 +80,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 1 && conDistance.convertToType == 2)
             {
                 System.out.println("Hon many meters would you like to convert into centimeters?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromMetersToCM() + " centimeters");
             }
@@ -79,7 +97,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 1 && conDistance.convertToType == 3)
             {
                 System.out.println("How many meters would you like to convert into feet?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromMetersToFeet() + " feet");
             }
@@ -87,7 +114,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 1 && conDistance.convertToType == 4)
             {
                 System.out.println("How many meters would you like to convert into inches?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromMetersToInches() + " inches");
             }
@@ -95,7 +131,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 2 && conDistance.convertToType == 1)
             {
                 System.out.println("How many centimeters would you like to convert into meters?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromCMToMeters() + " meters");
             }
@@ -104,7 +149,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 2 && conDistance.convertToType == 2)
             {
                 System.out.println("How many centimeters would you like to convert into centimeters?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromCMToCM() + " centimeters");
             }
@@ -112,7 +166,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 2 && conDistance.convertToType == 3)
             {
                 System.out.println("How many centimeters would you like to convert into feet?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromCMToFeet() + " feet");
             }
@@ -120,7 +183,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 2 && conDistance.convertToType == 4)
             {
                 System.out.println("How many centimeters would you like to convert into inches?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromCMToInches() + " inches");
             }
@@ -129,7 +201,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 3 && conDistance.convertToType == 1)
             {
                 System.out.println("How many feet would you like to convert into meters?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromFeetToMeters() + " meters");
             }
@@ -137,7 +218,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 3 && conDistance.convertToType == 2)
             {
                 System.out.println("How many feet would you like to convert into centimeters?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromFeetToCM() + " meters");
                 
@@ -146,7 +236,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 3 && conDistance.convertToType == 3)
             {
                 System.out.println("How many feet would you like to convert into feet?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromFeetToFeet() + " meters");
             }
@@ -154,7 +253,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 3 && conDistance.convertToType == 4)
             {
                 System.out.println("How many feet would you like convert into inches?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromFeetToInches() + " meters");
             }
@@ -162,7 +270,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 4 && conDistance.convertToType == 1)
             {
                 System.out.println("How many inches would you like to convert into meters?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromInchesToMeters() + " meters");
             }
@@ -170,7 +287,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 4 && conDistance.convertToType == 2)
             {
                 System.out.println("How many inches would you like to convert into centimeters?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromInchesToCM() + " centimeters");
             }
@@ -178,7 +304,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 4 && conDistance.convertToType == 3)
             {
                 System.out.println("How many inches would you like to convert into feet?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromInchesToFeet() + " feet");
             }
@@ -186,7 +321,16 @@ public class ConverterConsoleEdition
             else if (conDistance.convertFromType == 4 && conDistance.convertToType == 4)
             {
                 System.out.println("How many inches would you like to convert into inches?");
-                conDistance.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conDistance.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
                 
                 System.out.println(conDistance.conFromInchesToInches() + " inches");
             }
@@ -219,7 +363,16 @@ public class ConverterConsoleEdition
               if (conTemperature.convertFromType == 1 && conTemperature.convertToType == 1)
                 {
                   System.out.println("How many degrees celsius would you like to convert into celsius?");
-                  conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
+                  try
+                {
+                  conTemperature.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
 
                   System.out.println(conTemperature.conFromCelsiusToCelsius() + "°C");
                 }
@@ -227,7 +380,16 @@ public class ConverterConsoleEdition
                 else if (conTemperature.convertFromType == 1 && conTemperature.convertToType == 2)
                 {
                   System.out.println("How many degrees celsius would you like to convert into farenheit?");
-                  conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
+                  try
+                {
+                  conTemperature.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
 
                   System.out.println(conTemperature.conFromCelsiusToFarenheit() + "°F");
                 }
@@ -235,7 +397,16 @@ public class ConverterConsoleEdition
                 else if (conTemperature.convertFromType == 2 && conTemperature.convertToType == 1)
                 {
                   System.out.println("How many degrees farenheit would you like to convert into celsius?");
-                  conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
+                try
+                {
+                  conTemperature.setConversionValue(Double.parseDouble(readInput.next()));  
+                }
+                  catch(NumberFormatException noNumber)
+                {
+                  System.err.println("Sorry, please use a number, not a letter.");
+                  System.err.println("Also, here's a more technical error message: ");
+                  System.err.println(noNumber.getMessage());
+                }
 
                   System.out.println(conTemperature.conFromFarenheitToCelsius() + "°C");
                 }
@@ -243,16 +414,18 @@ public class ConverterConsoleEdition
                 else if (conTemperature.convertFromType == 2 && conTemperature.convertToType == 2)
                 {
                   System.out.println("How many degrees farenheit would you like to convert into farenheit?");
+                  
                   try
-                  {
-                    conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
-                  }
-                  catch (NumberFormatException noNumber)
-                  {
-                    System.err.println("Sorry, please use a number, not a letter.");
-                    System.err.println("Also, here's a more technical error message: ");
-                    System.err.println(noNumber.getMessage());
-                  }
+                    {
+                      conTemperature.setConversionValue(Double.parseDouble(readInput.next()));  
+                    }
+                  catch(NumberFormatException noNumber)
+                    {
+                      System.err.println("Sorry, please use a number, not a letter.");
+                      System.err.println("Also, here's a more technical error message: ");
+                      System.err.println(noNumber.getMessage());
+                    }
+                  
                   System.out.println(conTemperature.conFromFarenheitToFarenheit() + "°F");
                 }
               
