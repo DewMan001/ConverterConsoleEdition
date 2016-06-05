@@ -243,10 +243,19 @@ public class ConverterConsoleEdition
                 else if (conTemperature.convertFromType == 2 && conTemperature.convertToType == 2)
                 {
                   System.out.println("How many degrees farenheit would you like to convert into farenheit?");
-                  conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
-
+                  try
+                  {
+                    conTemperature.setConversionValue(Double.parseDouble(readInput.next()));
+                  }
+                  catch (NumberFormatException noNumber)
+                  {
+                    System.err.println("Sorry, please use a number, not a letter.");
+                    System.err.println("Also, here's a more technical error message: ");
+                    System.err.println(noNumber.getMessage());
+                  }
                   System.out.println(conTemperature.conFromFarenheitToFarenheit() + "°F");
                 }
+              
         }
     }
     
