@@ -15,7 +15,7 @@ public class Distance
    public int convertToType;
    public double conversionValue;
 
-      
+  //setters and getters for thevariables    
   public void setConvertFromType(int value)
   {
       convertFromType = value;
@@ -45,7 +45,7 @@ public class Distance
   {
       return conversionValue;
   }
-  
+  //the calculation methods,l the main heart and sould of our program
   public double conFromMetersToMeters()
   {
      double finalConversion;

@@ -15,7 +15,7 @@ public class Temperature
    public int convertToType;
    public double conversionValue;
 
-      
+  //setters and getters for our various variables    
   public int setConvertFromType(int value)
   {
       convertFromType = value;
@@ -34,6 +34,7 @@ public class Temperature
       return conversionValue;
   }
   
+  //methods which calculate the final result
   public double conFromCelsiusToCelsius()
   {
       double finalConversion;
@@ -46,9 +47,16 @@ public class Temperature
   public double conFromCelsiusToFarenheit()
   {
       double finalConversion;
+      finalConversion = 0.00;
+      try
+      {
       
       finalConversion = (conversionValue * 1.8) + 32;
-      
+      }
+      catch(NumberFormatException ex)
+      {
+          System.err.println("NO! YOU'RE WRONG!");
+      }
       return finalConversion;
   }
   
